@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function booleanIsPrime(n) {
+        var prime = true;
+        if (n<2){
+            prime = false;
+        }
+        else {
+            for (var i = 2; i<n-1; i++){
+                if (n%i===0){
+                    prime = false ;
+                    break;
+                }
+            }
+        }
+        if (prime=== true){
+            alert(n + " is prime number");
+        } else {
+            alert(n + " is not prime number");
+        }
+
+    }
+    var a = parseInt(prompt("Enter your number"));
+    var primenumber = booleanIsPrime(a);
+</script>
+</body>
+</html>
